@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  user_profile: "Personal Detail"
+  profile: 
+    first_name: "first_name"
+    last_name: "last_name"
+    mobile_number: "mobile_number"
+    landline_number: "landline_number"
+    gender: "gender"
+    gender_options: ["male", "female"]

@@ -1,0 +1,20 @@
+%p
+  = f.label :first_name, Spree.t('profile.first_name')
+  %br
+  = f.text_field :first_name
+%p
+  = f.label :last_name, Spree.t('profile.last_name')
+  %br
+  = f.text_field :last_name
+%p
+  = f.label :mobile_number, Spree.t('profile.mobile_number')
+  %br
+  = f.text_field :mobile_number
+%p
+  = f.label :landline_number, Spree.t('profile.landline_number')
+  %br
+  = f.text_field :landline_number
+%p
+  = f.label :gender, Spree.t('profile.gender')
+  %br
+  = f.select :gender, [['Male', 1], ['Female', 2]], {include_blank: 'Select'}
