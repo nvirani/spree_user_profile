@@ -18,7 +18,7 @@ module Spree
         :gender)
       spree_current_user.update_attributes(user_params)
       flash[:notice] = "Profile Updated"
-      redirect_to user_spree_user_person_detail_path
+      redirect_to account_path
     end
   end
 end
