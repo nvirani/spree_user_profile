@@ -1,15 +1,15 @@
 module Spree
   UsersController.class_eval do
-    def method1
+    def add_person_detail
       if spree_current_user.present?
       	@user = spree_current_user
       else
-        flash[:error] = "Please login"
+        flash[:error] = t(:login_message)
         redirect_to root_path
       end
     end
 
-    def method2
+    def update_person_detail
       user_params = params.require(:user).permit(
         :first_name,
         :last_name,
@@ -18,7 +18,7 @@ module Spree
         :gender)
       spree_current_user.update_attributes(user_params)
       flash[:notice] = "Profile Updated"
-      redirect_to user_spree_user_user_profile_path
+      redirect_to user_spree_user_person_detail_path
     end
   end
 end

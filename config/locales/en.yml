@@ -2,11 +2,12 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  user_profile: "Personal Detail"
+  login_message: "Please login"
+  pesonal_detail: "Personal Detail"
   profile: 
-    first_name: "first_name"
-    last_name: "last_name"
-    mobile_number: "mobile_number"
-    landline_number: "landline_number"
-    gender: "gender"
-    gender_options: ["male", "female"]
+    first_name: "First Name"
+    last_name: "Last Name"
+    mobile_number: "Mobile Number"
+    landline_number: "Landline Number"
+    gender: "Gender"
+    gender_options: "Male Female"
